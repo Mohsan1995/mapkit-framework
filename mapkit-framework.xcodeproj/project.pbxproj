@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C24494A5CA17894B8619197 /* libPods-mapkit-framework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54079F5666585B183C02A918 /* libPods-mapkit-framework.a */; };
+		66873E0A1E3A533100B81FAB /* AbsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E031E3A533100B81FAB /* AbsMapView.swift */; };
+		66873E0B1E3A533100B81FAB /* Annotationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E041E3A533100B81FAB /* Annotationable.swift */; };
+		66873E0C1E3A533100B81FAB /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E051E3A533100B81FAB /* GoogleMapView.swift */; };
+		66873E0D1E3A533100B81FAB /* IOSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E061E3A533100B81FAB /* IOSMapView.swift */; };
+		66873E0F1E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E081E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift */; };
+		66873E101E3A533100B81FAB /* PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E091E3A533100B81FAB /* PointAnnotation.swift */; };
+		66873E1E1E3A53BE00B81FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E141E3A53BE00B81FAB /* AppDelegate.swift */; };
+		66873E1F1E3A53BE00B81FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66873E151E3A53BE00B81FAB /* Assets.xcassets */; };
+		66873E201E3A53BE00B81FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66873E171E3A53BE00B81FAB /* LaunchScreen.storyboard */; };
+		66873E211E3A53BE00B81FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66873E191E3A53BE00B81FAB /* Main.storyboard */; };
+		66873E221E3A53BE00B81FAB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66873E1B1E3A53BE00B81FAB /* Info.plist */; };
+		66873E231E3A53BE00B81FAB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E1C1E3A53BE00B81FAB /* MainViewController.swift */; };
+		66873E241E3A53BE00B81FAB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66873E1D1E3A53BE00B81FAB /* MainViewController.xib */; };
+		66873E281E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E271E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift */; };
+		66873E2A1E3B8A4600B81FAB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E291E3B8A4600B81FAB /* City.swift */; };
+		66F3D1F81E3BA19C00F56A42 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3D1F71E3BA19C00F56A42 /* MapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38C33FF713913AB9D37C94A8 /* Pods-mapkit-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapkit-framework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapkit-framework/Pods-mapkit-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		54079F5666585B183C02A918 /* libPods-mapkit-framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapkit-framework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66873DD11E3A43CB00B81FAB /* mapkit-framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapkit-framework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66873E031E3A533100B81FAB /* AbsMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbsMapView.swift; path = Sources/AbsMapView.swift; sourceTree = "<group>"; };
+		66873E041E3A533100B81FAB /* Annotationable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Annotationable.swift; path = Sources/Annotationable.swift; sourceTree = "<group>"; };
+		66873E051E3A533100B81FAB /* GoogleMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleMapView.swift; path = Sources/GoogleMapView.swift; sourceTree = "<group>"; };
+		66873E061E3A533100B81FAB /* IOSMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IOSMapView.swift; path = Sources/IOSMapView.swift; sourceTree = "<group>"; };
+		66873E081E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MKPointAnnotation+PointAnnotation.swift"; path = "Sources/MKPointAnnotation+PointAnnotation.swift"; sourceTree = "<group>"; };
+		66873E091E3A533100B81FAB /* PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointAnnotation.swift; path = Sources/PointAnnotation.swift; sourceTree = "<group>"; };
+		66873E141E3A53BE00B81FAB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sample/AppDelegate.swift; sourceTree = "<group>"; };
+		66873E151E3A53BE00B81FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sample/Assets.xcassets; sourceTree = "<group>"; };
+		66873E181E3A53BE00B81FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66873E1A1E3A53BE00B81FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		66873E1B1E3A53BE00B81FAB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sample/Info.plist; sourceTree = "<group>"; };
+		66873E1C1E3A53BE00B81FAB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Sample/MainViewController.swift; sourceTree = "<group>"; };
+		66873E1D1E3A53BE00B81FAB /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = Sample/MainViewController.xib; sourceTree = "<group>"; };
+		66873E271E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GMSMarker+PointAnnotation.swift"; path = "Sources/GMSMarker+PointAnnotation.swift"; sourceTree = "<group>"; };
+		66873E291E3B8A4600B81FAB /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = Sample/City.swift; sourceTree = "<group>"; };
+		66F3D1F71E3BA19C00F56A42 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = Sources/MapView.swift; sourceTree = "<group>"; };
+		DF40E1742EB831B1319AD3F6 /* Pods-mapkit-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapkit-framework.release.xcconfig"; path = "Pods/Target Support Files/Pods-mapkit-framework/Pods-mapkit-framework.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66873DCE1E3A43CB00B81FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C24494A5CA17894B8619197 /* libPods-mapkit-framework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66873DC81E3A43CB00B81FAB = {
+			isa = PBXGroup;
+			children = (
+				66873E131E3A53A400B81FAB /* Sources */,
+				66873E111E3A538C00B81FAB /* Sample */,
+				66873DD21E3A43CB00B81FAB /* Products */,
+				8B1420D23FA92A010D313FE6 /* Pods */,
+				EB4CCBCE9B4E0DA548EA2C6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		66873DD21E3A43CB00B81FAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66873DD11E3A43CB00B81FAB /* mapkit-framework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66873E111E3A538C00B81FAB /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				66873E141E3A53BE00B81FAB /* AppDelegate.swift */,
+				66873E151E3A53BE00B81FAB /* Assets.xcassets */,
+				66873E161E3A53BE00B81FAB /* Base.lproj */,
+				66873E1B1E3A53BE00B81FAB /* Info.plist */,
+				66873E1C1E3A53BE00B81FAB /* MainViewController.swift */,
+				66873E1D1E3A53BE00B81FAB /* MainViewController.xib */,
+				66873E291E3B8A4600B81FAB /* City.swift */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+		66873E131E3A53A400B81FAB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				66873E261E3A550800B81FAB /* MapView */,
+				66873E041E3A533100B81FAB /* Annotationable.swift */,
+				66873E081E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift */,
+				66873E091E3A533100B81FAB /* PointAnnotation.swift */,
+				66873E271E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		66873E161E3A53BE00B81FAB /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				66873E171E3A53BE00B81FAB /* LaunchScreen.storyboard */,
+				66873E191E3A53BE00B81FAB /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = Sample/Base.lproj;
+			sourceTree = "<group>";
+		};
+		66873E261E3A550800B81FAB /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				66F3D1F71E3BA19C00F56A42 /* MapView.swift */,
+				66873E031E3A533100B81FAB /* AbsMapView.swift */,
+				66873E061E3A533100B81FAB /* IOSMapView.swift */,
+				66873E051E3A533100B81FAB /* GoogleMapView.swift */,
+			);
+			name = MapView;
+			sourceTree = "<group>";
+		};
+		8B1420D23FA92A010D313FE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38C33FF713913AB9D37C94A8 /* Pods-mapkit-framework.debug.xcconfig */,
+				DF40E1742EB831B1319AD3F6 /* Pods-mapkit-framework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB4CCBCE9B4E0DA548EA2C6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54079F5666585B183C02A918 /* libPods-mapkit-framework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66873DD01E3A43CB00B81FAB /* mapkit-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66873DE31E3A43CB00B81FAB /* Build configuration list for PBXNativeTarget "mapkit-framework" */;
+			buildPhases = (
+				4511F2F0D944AABED0A2F0C2 /* [CP] Check Pods Manifest.lock */,
+				66873DCD1E3A43CB00B81FAB /* Sources */,
+				66873DCE1E3A43CB00B81FAB /* Frameworks */,
+				66873DCF1E3A43CB00B81FAB /* Resources */,
+				64EEC83C84B781F24221B38E /* [CP] Embed Pods Frameworks */,
+				5985A70176AAAE855E8324B3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mapkit-framework";
+			productName = "mapkit-framework";
+			productReference = 66873DD11E3A43CB00B81FAB /* mapkit-framework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66873DC91E3A43CB00B81FAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ESGI;
+				TargetAttributes = {
+					66873DD01E3A43CB00B81FAB = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 66873DCC1E3A43CB00B81FAB /* Build configuration list for PBXProject "mapkit-framework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66873DC81E3A43CB00B81FAB;
+			productRefGroup = 66873DD21E3A43CB00B81FAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66873DD01E3A43CB00B81FAB /* mapkit-framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66873DCF1E3A43CB00B81FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66873E221E3A53BE00B81FAB /* Info.plist in Resources */,
+				66873E211E3A53BE00B81FAB /* Main.storyboard in Resources */,
+				66873E241E3A53BE00B81FAB /* MainViewController.xib in Resources */,
+				66873E1F1E3A53BE00B81FAB /* Assets.xcassets in Resources */,
+				66873E201E3A53BE00B81FAB /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4511F2F0D944AABED0A2F0C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5985A70176AAAE855E8324B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mapkit-framework/Pods-mapkit-framework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64EEC83C84B781F24221B38E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mapkit-framework/Pods-mapkit-framework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66873DCD1E3A43CB00B81FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66873E1E1E3A53BE00B81FAB /* AppDelegate.swift in Sources */,
+				66873E101E3A533100B81FAB /* PointAnnotation.swift in Sources */,
+				66873E0C1E3A533100B81FAB /* GoogleMapView.swift in Sources */,
+				66F3D1F81E3BA19C00F56A42 /* MapView.swift in Sources */,
+				66873E0B1E3A533100B81FAB /* Annotationable.swift in Sources */,
+				66873E0A1E3A533100B81FAB /* AbsMapView.swift in Sources */,
+				66873E281E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift in Sources */,
+				66873E2A1E3B8A4600B81FAB /* City.swift in Sources */,
+				66873E231E3A53BE00B81FAB /* MainViewController.swift in Sources */,
+				66873E0D1E3A533100B81FAB /* IOSMapView.swift in Sources */,
+				66873E0F1E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66873E171E3A53BE00B81FAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66873E181E3A53BE00B81FAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		66873E191E3A53BE00B81FAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66873E1A1E3A53BE00B81FAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66873DE11E3A43CB00B81FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66873DE21E3A43CB00B81FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66873DE41E3A43CB00B81FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C33FF713913AB9D37C94A8 /* Pods-mapkit-framework.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esgi.mapkit-framework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		66873DE51E3A43CB00B81FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF40E1742EB831B1319AD3F6 /* Pods-mapkit-framework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esgi.mapkit-framework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66873DCC1E3A43CB00B81FAB /* Build configuration list for PBXProject "mapkit-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66873DE11E3A43CB00B81FAB /* Debug */,
+				66873DE21E3A43CB00B81FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66873DE31E3A43CB00B81FAB /* Build configuration list for PBXNativeTarget "mapkit-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66873DE41E3A43CB00B81FAB /* Debug */,
+				66873DE51E3A43CB00B81FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66873DC91E3A43CB00B81FAB /* Project object */;
+}
