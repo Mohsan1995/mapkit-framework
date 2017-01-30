@@ -2,7 +2,8 @@ import UIKit
 import CoreLocation
 
 class Annotationable: Equatable, Hashable {
-    func getCoor() -> CLLocationCoordinate2D {
+    
+    func getCoord() -> CLLocationCoordinate2D {
         preconditionFailure("This method must be overridden")
     }
     func getTitle() -> String {
@@ -11,7 +12,7 @@ class Annotationable: Equatable, Hashable {
     
     
     var hashValue: Int {
-        return (getCoor().latitude.hashValue*getCoor().longitude.hashValue)+getTitle().hashValue
+        return (getCoord().latitude.hashValue*getCoord().longitude.hashValue)+getTitle().hashValue
     }
     
     static func == (lhs: Annotationable, rhs: Annotationable) -> Bool {

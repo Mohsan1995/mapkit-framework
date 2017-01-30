@@ -12,7 +12,7 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
     var delegate: MapViewDelegate? = nil {
         willSet(newDelegate) {
             if apiDelegate == nil {
-                apiDelegate = D(mapViewCtrl: self)
+                apiDelegate = D(controller: self)
                 applyApiDelegate()
             }
         }
@@ -41,7 +41,7 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
     
     func getAnnotationByCoor(coor: CLLocationCoordinate2D) -> Annotationable? {
         for (annotation, _) in annotations {
-            if (annotation.getCoor().latitude == coor.latitude && annotation.getCoor().longitude == coor.longitude) {
+            if (annotation.getCoord().latitude == coor.latitude && annotation.getCoord().longitude == coor.longitude) {
                 return annotation
             }
         }

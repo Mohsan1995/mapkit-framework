@@ -13,7 +13,7 @@ class IOSMapViewController: ApiMapViewController<MKPointAnnotation, MKMapView, I
     override func generatePointAnnotationTyped(annotation: Annotationable) -> MKPointAnnotation {
         let pointAnnoation = MKPointAnnotation()
         pointAnnoation.title = annotation.getTitle()
-        pointAnnoation.coordinate = annotation.getCoor()
+        pointAnnoation.coordinate = annotation.getCoord()
         
         return pointAnnoation
     }

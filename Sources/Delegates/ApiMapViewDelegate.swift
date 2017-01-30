@@ -1,9 +1,9 @@
 import UIKit
 
 class ApiMapViewDelegate: NSObject {
-    var mapViewCtrl: MapViewController
+    var controller: MapViewController
 
-    required init(mapViewCtrl: MapViewController) {
-        self.mapViewCtrl = mapViewCtrl
+    required init(controller: MapViewController) {
+        self.controller = controller
     }
 }

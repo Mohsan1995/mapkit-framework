@@ -11,7 +11,7 @@ import MapKit
 
 class MainViewController: UIViewController, MapViewDelegate {
 
-    var mapView: MapViewController?;
+    var mapView: MapViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()

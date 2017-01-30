@@ -11,7 +11,7 @@ class GoogleMapViewController: ApiMapViewController<GMSMarker, GMSMapView, Googl
     }
     
     override func generatePointAnnotationTyped(annotation: Annotationable) -> GMSMarker {
-        let pointAnnoation = GMSMarker(position: annotation.getCoor())
+        let pointAnnoation = GMSMarker(position: annotation.getCoord())
         pointAnnoation.title = annotation.getTitle()
 
         return pointAnnoation
@@ -23,7 +23,7 @@ class GoogleMapViewController: ApiMapViewController<GMSMarker, GMSMapView, Googl
     
     
     override func removePointAnnotationToMapView(pointAnnotation : GMSMarker) {
-        pointAnnotation.map = nil;
+        pointAnnotation.map = nil
     }
     
     override func applyApiDelegate() {
