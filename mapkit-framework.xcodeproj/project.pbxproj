@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C24494A5CA17894B8619197 /* libPods-mapkit-framework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54079F5666585B183C02A918 /* libPods-mapkit-framework.a */; };
-		66873E0A1E3A533100B81FAB /* AbsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E031E3A533100B81FAB /* AbsMapView.swift */; };
-		66873E0B1E3A533100B81FAB /* Annotationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E041E3A533100B81FAB /* Annotationable.swift */; };
-		66873E0C1E3A533100B81FAB /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E051E3A533100B81FAB /* GoogleMapView.swift */; };
-		66873E0D1E3A533100B81FAB /* IOSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E061E3A533100B81FAB /* IOSMapView.swift */; };
-		66873E0F1E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E081E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift */; };
-		66873E101E3A533100B81FAB /* PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E091E3A533100B81FAB /* PointAnnotation.swift */; };
 		66873E1E1E3A53BE00B81FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E141E3A53BE00B81FAB /* AppDelegate.swift */; };
 		66873E1F1E3A53BE00B81FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66873E151E3A53BE00B81FAB /* Assets.xcassets */; };
 		66873E201E3A53BE00B81FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66873E171E3A53BE00B81FAB /* LaunchScreen.storyboard */; };
@@ -21,21 +15,25 @@
 		66873E221E3A53BE00B81FAB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66873E1B1E3A53BE00B81FAB /* Info.plist */; };
 		66873E231E3A53BE00B81FAB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E1C1E3A53BE00B81FAB /* MainViewController.swift */; };
 		66873E241E3A53BE00B81FAB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66873E1D1E3A53BE00B81FAB /* MainViewController.xib */; };
-		66873E281E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E271E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift */; };
 		66873E2A1E3B8A4600B81FAB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E291E3B8A4600B81FAB /* City.swift */; };
-		66F3D1F81E3BA19C00F56A42 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3D1F71E3BA19C00F56A42 /* MapView.swift */; };
+		66A2F3AF1E3F3588009F284E /* Annotationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3A21E3F3588009F284E /* Annotationable.swift */; };
+		66A2F3BA1E3F3588009F284E /* PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3AD1E3F3588009F284E /* PointAnnotation.swift */; };
+		66A2F3BD1E3F35D9009F284E /* GMSMarker+PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3BB1E3F35D9009F284E /* GMSMarker+PointAnnotation.swift */; };
+		66A2F3BE1E3F35D9009F284E /* MKPointAnnotation+PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3BC1E3F35D9009F284E /* MKPointAnnotation+PointAnnotation.swift */; };
+		66A2F3C51E3F35E7009F284E /* ApiMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3C01E3F35E6009F284E /* ApiMapViewDelegate.swift */; };
+		66A2F3C61E3F35E7009F284E /* GoogleMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3C11E3F35E6009F284E /* GoogleMapViewDelegate.swift */; };
+		66A2F3C71E3F35E7009F284E /* IOSMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3C21E3F35E6009F284E /* IOSMapViewDelegate.swift */; };
+		66A2F3C81E3F35E7009F284E /* MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3C31E3F35E6009F284E /* MapViewDelegate.swift */; };
+		66A2F3CE1E3F35F0009F284E /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3CA1E3F35F0009F284E /* GoogleMapViewController.swift */; };
+		66A2F3CF1E3F35F0009F284E /* IOSMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3CB1E3F35F0009F284E /* IOSMapViewController.swift */; };
+		66A2F3D01E3F35F0009F284E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3CC1E3F35F0009F284E /* MapViewController.swift */; };
+		66A2F3D41E3F39AB009F284E /* ApiMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3D31E3F39AB009F284E /* ApiMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38C33FF713913AB9D37C94A8 /* Pods-mapkit-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapkit-framework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapkit-framework/Pods-mapkit-framework.debug.xcconfig"; sourceTree = "<group>"; };
 		54079F5666585B183C02A918 /* libPods-mapkit-framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapkit-framework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66873DD11E3A43CB00B81FAB /* mapkit-framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapkit-framework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66873E031E3A533100B81FAB /* AbsMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbsMapView.swift; path = Sources/AbsMapView.swift; sourceTree = "<group>"; };
-		66873E041E3A533100B81FAB /* Annotationable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Annotationable.swift; path = Sources/Annotationable.swift; sourceTree = "<group>"; };
-		66873E051E3A533100B81FAB /* GoogleMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleMapView.swift; path = Sources/GoogleMapView.swift; sourceTree = "<group>"; };
-		66873E061E3A533100B81FAB /* IOSMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IOSMapView.swift; path = Sources/IOSMapView.swift; sourceTree = "<group>"; };
-		66873E081E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MKPointAnnotation+PointAnnotation.swift"; path = "Sources/MKPointAnnotation+PointAnnotation.swift"; sourceTree = "<group>"; };
-		66873E091E3A533100B81FAB /* PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointAnnotation.swift; path = Sources/PointAnnotation.swift; sourceTree = "<group>"; };
 		66873E141E3A53BE00B81FAB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sample/AppDelegate.swift; sourceTree = "<group>"; };
 		66873E151E3A53BE00B81FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sample/Assets.xcassets; sourceTree = "<group>"; };
 		66873E181E3A53BE00B81FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,9 +41,19 @@
 		66873E1B1E3A53BE00B81FAB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sample/Info.plist; sourceTree = "<group>"; };
 		66873E1C1E3A53BE00B81FAB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Sample/MainViewController.swift; sourceTree = "<group>"; };
 		66873E1D1E3A53BE00B81FAB /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = Sample/MainViewController.xib; sourceTree = "<group>"; };
-		66873E271E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GMSMarker+PointAnnotation.swift"; path = "Sources/GMSMarker+PointAnnotation.swift"; sourceTree = "<group>"; };
 		66873E291E3B8A4600B81FAB /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = Sample/City.swift; sourceTree = "<group>"; };
-		66F3D1F71E3BA19C00F56A42 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = Sources/MapView.swift; sourceTree = "<group>"; };
+		66A2F3A21E3F3588009F284E /* Annotationable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Annotationable.swift; path = Sources/Annotationable.swift; sourceTree = "<group>"; };
+		66A2F3AD1E3F3588009F284E /* PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointAnnotation.swift; path = Sources/PointAnnotation.swift; sourceTree = "<group>"; };
+		66A2F3BB1E3F35D9009F284E /* GMSMarker+PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GMSMarker+PointAnnotation.swift"; path = "Sources/Extensions/GMSMarker+PointAnnotation.swift"; sourceTree = "<group>"; };
+		66A2F3BC1E3F35D9009F284E /* MKPointAnnotation+PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MKPointAnnotation+PointAnnotation.swift"; path = "Sources/Extensions/MKPointAnnotation+PointAnnotation.swift"; sourceTree = "<group>"; };
+		66A2F3C01E3F35E6009F284E /* ApiMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiMapViewDelegate.swift; path = Sources/Delegates/ApiMapViewDelegate.swift; sourceTree = "<group>"; };
+		66A2F3C11E3F35E6009F284E /* GoogleMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleMapViewDelegate.swift; path = Sources/Delegates/GoogleMapViewDelegate.swift; sourceTree = "<group>"; };
+		66A2F3C21E3F35E6009F284E /* IOSMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IOSMapViewDelegate.swift; path = Sources/Delegates/IOSMapViewDelegate.swift; sourceTree = "<group>"; };
+		66A2F3C31E3F35E6009F284E /* MapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewDelegate.swift; path = Sources/Delegates/MapViewDelegate.swift; sourceTree = "<group>"; };
+		66A2F3CA1E3F35F0009F284E /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleMapViewController.swift; path = Sources/Controllers/GoogleMapViewController.swift; sourceTree = "<group>"; };
+		66A2F3CB1E3F35F0009F284E /* IOSMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IOSMapViewController.swift; path = Sources/Controllers/IOSMapViewController.swift; sourceTree = "<group>"; };
+		66A2F3CC1E3F35F0009F284E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Sources/Controllers/MapViewController.swift; sourceTree = "<group>"; };
+		66A2F3D31E3F39AB009F284E /* ApiMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiMapViewController.swift; path = Sources/Controllers/ApiMapViewController.swift; sourceTree = "<group>"; };
 		DF40E1742EB831B1319AD3F6 /* Pods-mapkit-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapkit-framework.release.xcconfig"; path = "Pods/Target Support Files/Pods-mapkit-framework/Pods-mapkit-framework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		661706501E3E2CEC0091C11B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				66A2F3BB1E3F35D9009F284E /* GMSMarker+PointAnnotation.swift */,
+				66A2F3BC1E3F35D9009F284E /* MKPointAnnotation+PointAnnotation.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		66873DC81E3A43CB00B81FAB = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +114,11 @@
 		66873E131E3A53A400B81FAB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				66873E261E3A550800B81FAB /* MapView */,
-				66873E041E3A533100B81FAB /* Annotationable.swift */,
-				66873E081E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift */,
-				66873E091E3A533100B81FAB /* PointAnnotation.swift */,
-				66873E271E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift */,
+				66873E261E3A550800B81FAB /* Controllers */,
+				66F3D1FD1E3BC7E600F56A42 /* Delegates */,
+				661706501E3E2CEC0091C11B /* Extensions */,
+				66A2F3A21E3F3588009F284E /* Annotationable.swift */,
+				66A2F3AD1E3F3588009F284E /* PointAnnotation.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -116,15 +133,26 @@
 			path = Sample/Base.lproj;
 			sourceTree = "<group>";
 		};
-		66873E261E3A550800B81FAB /* MapView */ = {
+		66873E261E3A550800B81FAB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				66F3D1F71E3BA19C00F56A42 /* MapView.swift */,
-				66873E031E3A533100B81FAB /* AbsMapView.swift */,
-				66873E061E3A533100B81FAB /* IOSMapView.swift */,
-				66873E051E3A533100B81FAB /* GoogleMapView.swift */,
+				66A2F3CC1E3F35F0009F284E /* MapViewController.swift */,
+				66A2F3D31E3F39AB009F284E /* ApiMapViewController.swift */,
+				66A2F3CA1E3F35F0009F284E /* GoogleMapViewController.swift */,
+				66A2F3CB1E3F35F0009F284E /* IOSMapViewController.swift */,
 			);
-			name = MapView;
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		66F3D1FD1E3BC7E600F56A42 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				66A2F3C31E3F35E6009F284E /* MapViewDelegate.swift */,
+				66A2F3C01E3F35E6009F284E /* ApiMapViewDelegate.swift */,
+				66A2F3C11E3F35E6009F284E /* GoogleMapViewDelegate.swift */,
+				66A2F3C21E3F35E6009F284E /* IOSMapViewDelegate.swift */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 		8B1420D23FA92A010D313FE6 /* Pods */ = {
@@ -269,17 +297,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A2F3CE1E3F35F0009F284E /* GoogleMapViewController.swift in Sources */,
+				66A2F3C81E3F35E7009F284E /* MapViewDelegate.swift in Sources */,
+				66A2F3C51E3F35E7009F284E /* ApiMapViewDelegate.swift in Sources */,
 				66873E1E1E3A53BE00B81FAB /* AppDelegate.swift in Sources */,
-				66873E101E3A533100B81FAB /* PointAnnotation.swift in Sources */,
-				66873E0C1E3A533100B81FAB /* GoogleMapView.swift in Sources */,
-				66F3D1F81E3BA19C00F56A42 /* MapView.swift in Sources */,
-				66873E0B1E3A533100B81FAB /* Annotationable.swift in Sources */,
-				66873E0A1E3A533100B81FAB /* AbsMapView.swift in Sources */,
-				66873E281E3A56E800B81FAB /* GMSMarker+PointAnnotation.swift in Sources */,
+				66A2F3C71E3F35E7009F284E /* IOSMapViewDelegate.swift in Sources */,
 				66873E2A1E3B8A4600B81FAB /* City.swift in Sources */,
+				66A2F3BA1E3F3588009F284E /* PointAnnotation.swift in Sources */,
+				66A2F3AF1E3F3588009F284E /* Annotationable.swift in Sources */,
+				66A2F3BE1E3F35D9009F284E /* MKPointAnnotation+PointAnnotation.swift in Sources */,
 				66873E231E3A53BE00B81FAB /* MainViewController.swift in Sources */,
-				66873E0D1E3A533100B81FAB /* IOSMapView.swift in Sources */,
-				66873E0F1E3A533100B81FAB /* MKPointAnnotation+PointAnnotation.swift in Sources */,
+				66A2F3BD1E3F35D9009F284E /* GMSMarker+PointAnnotation.swift in Sources */,
+				66A2F3D41E3F39AB009F284E /* ApiMapViewController.swift in Sources */,
+				66A2F3C61E3F35E7009F284E /* GoogleMapViewDelegate.swift in Sources */,
+				66A2F3CF1E3F35F0009F284E /* IOSMapViewController.swift in Sources */,
+				66A2F3D01E3F35F0009F284E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

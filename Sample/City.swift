@@ -1,11 +1,3 @@
-//
-//  City.swift
-//  mapkit-framework
-//
-//  Created by Quentin on 27/01/2017.
-//  Copyright © 2017 ESGI. All rights reserved.
-//
-
 import UIKit
 import CoreLocation
 
@@ -23,18 +15,15 @@ class City: Annotationable {
     }
     
     
-    
-    func getCoor() -> CLLocationCoordinate2D {
+    override func getCoor() -> CLLocationCoordinate2D {
         return CLLocationCoordinate2D.init(latitude: lat, longitude: lon);
     }
     
-    
-    func getTitle() -> String {
-        return self.country;
+    override func getTitle() -> String {
+        return self.name;
     }
     
-    
-    var hashValue: Int {
+    override var hashValue: Int {
         return (name.hash)
     }
     
