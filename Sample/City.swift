@@ -29,7 +29,7 @@ class City: Annotationable {
     }
     
     override var hashValue: Int {
-        return name.hashValue * country.hashValue
+        return name.hash
     }
     
     static func == (lhs: City, rhs: City) -> Bool {
