@@ -1,5 +1,6 @@
 import UIKit
 import CoreLocation
+import MapKit
 
 class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>: NSObject, MapViewController {
     
@@ -63,4 +64,10 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
     func applyApiDelegate() {
         preconditionFailure("This method must be overridden")
     }
+    
+    func directionRoad(source: Annotationable, destination: Annotationable){
+        preconditionFailure("This method must be overridden")
+    }
+    
+    
 }

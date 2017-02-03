@@ -37,6 +37,11 @@ class MainViewController: UIViewController, MapViewDelegate {
         } catch {
             print("Error deserializing JSON: \(error)")
         }
+        
+        let citySource = City(name: "Test", country: "FR", lat: 44.8404, lon: 2.4833)
+        let cityDestination = City(name: "Test", country: "FR", lat: 48.8333, lon: 2.6333)
+        
+        mapView?.directionRoad(source: citySource, destination: cityDestination)
     }
 
     override func didReceiveMemoryWarning() {

@@ -17,4 +17,12 @@ class IOSMapViewDelegate: ApiMapViewDelegate, MKMapViewDelegate {
             controller.delegate?.onUnselectAnnotation(annotation: annotation)
         }
     }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.red
+        renderer.lineWidth = 4.0
+        
+        return renderer
+    }
 }

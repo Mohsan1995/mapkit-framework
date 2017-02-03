@@ -8,4 +8,7 @@ protocol MapViewController {
     func add(annotation: Annotationable)
     
     func getAnnotationByCoor(coor: CLLocationCoordinate2D) -> Annotationable?
+    
+    func directionRoad(source: Annotationable, destination: Annotationable)
+    
 }

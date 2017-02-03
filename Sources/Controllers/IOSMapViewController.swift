@@ -30,4 +30,39 @@ class IOSMapViewController: ApiMapViewController<MKPointAnnotation, MKMapView, I
     override func applyApiDelegate() {
         mapView.delegate = apiDelegate!
     }
+    
+    override func directionRoad(source: Annotationable, destination: Annotationable){
+        let directionRequest = MKDirectionsRequest();
+        
+        
+        let sourcePlaceMaker = MKPlacemark(coordinate: source.getCoord())
+        let destinationPlaceMaker = MKPlacemark(coordinate: destination.getCoord())
+        
+        directionRequest.source = MKMapItem(placemark: sourcePlaceMaker)
+        directionRequest.destination = MKMapItem(placemark: destinationPlaceMaker)
+        directionRequest.transportType = .automobile
+        
+        // Calculate the direction
+        let directions = MKDirections(request: directionRequest)
+        
+        // 8.
+        directions.calculate {
+            (response, error) -> Void in
+            
+            guard let response = response else {
+                if let error = error {
+                    print("Error: \(error)")
+                }
+                
+                return
+            }
+            
+            let route = response.routes[0]
+            self.mapView.add((route.polyline), level: MKOverlayLevel.aboveRoads)
+            
+            let rect = route.polyline.boundingMapRect
+            self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
+            
+        }
+    }
 }
