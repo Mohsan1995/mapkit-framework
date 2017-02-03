@@ -16,7 +16,8 @@ class MainViewController: UIViewController, MapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.mapView = IOSMapViewController.init(rootView: self.view)
+        //self.mapView = IOSMapViewController(rootView: self.view)
+        self.mapView = GoogleMapViewController(rootView: self.view)
         mapView?.delegate = self
         
         do {
@@ -41,7 +42,7 @@ class MainViewController: UIViewController, MapViewDelegate {
         let citySource = City(name: "Test", country: "FR", lat: 44.8404, lon: 2.4833)
         let cityDestination = City(name: "Test", country: "FR", lat: 48.8333, lon: 2.6333)
         
-        mapView?.directionRoad(source: citySource, destination: cityDestination)
+        //mapView?.directionRoad(source: citySource, destination: cityDestination)
     }
 
     override func didReceiveMemoryWarning() {
