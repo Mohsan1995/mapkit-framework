@@ -4,9 +4,11 @@ import MapKit
 class IOSMapViewController: ApiMapViewController<MKPointAnnotation, MKMapView, IOSMapViewDelegate> {
     
     init(rootView: UIView) {
+
+        
         super.init(
             rootView: rootView,
-            mapView: MKMapView.init(frame: rootView.bounds)
+            mapView: MKMapView(frame: rootView.frame)
         )
     }
     
