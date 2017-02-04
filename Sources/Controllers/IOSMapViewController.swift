@@ -33,7 +33,7 @@ class IOSMapViewController: ApiMapViewController<MKPointAnnotation, MKMapView, I
         mapView.delegate = apiDelegate!
     }
     
-    override func directionRoad(source: Annotationable, destination: Annotationable){
+    override func directionRoad(source: Annotationable, destination: Annotationable, completionHandler:@escaping (RouteRequest, Error?) -> Void){
         let directionRequest = MKDirectionsRequest();
         
         
@@ -54,16 +54,24 @@ class IOSMapViewController: ApiMapViewController<MKPointAnnotation, MKMapView, I
             guard let response = response else {
                 if let error = error {
                     print("Error: \(error)")
+                    completionHandler(MKRoute(), error)
                 }
                 
                 return
             }
             
             let route = response.routes[0]
+            
+            
+            
             self.mapView.add((route.polyline), level: MKOverlayLevel.aboveRoads)
             
             let rect = route.polyline.boundingMapRect
             self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
+            
+            
+            completionHandler(route, nil)
+            
             
         }
     }

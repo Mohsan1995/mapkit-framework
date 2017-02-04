@@ -9,6 +9,6 @@ protocol MapViewController {
     
     func getAnnotationByCoor(coor: CLLocationCoordinate2D) -> Annotationable?
     
-    func directionRoad(source: Annotationable, destination: Annotationable)
+    func directionRoad(source: Annotationable, destination: Annotationable, completionHandler:@escaping (RouteRequest, Error?) -> Void)
     
 }

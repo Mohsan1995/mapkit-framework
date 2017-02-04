@@ -42,7 +42,16 @@ class MainViewController: UIViewController, MapViewDelegate {
         let citySource = City(name: "Test", country: "FR", lat: 44.8404, lon: 2.4833)
         let cityDestination = City(name: "Test", country: "FR", lat: 48.8333, lon: 2.6333)
         
-        //mapView?.directionRoad(source: citySource, destination: cityDestination)
+        mapView?.directionRoad(source: citySource, destination: cityDestination, completionHandler: { routes, error in
+            
+            //if (!(error != nil)) { return }
+            
+            let route : MKRoute = routes as! MKRoute;
+            
+            print(route.steps[0].instructions)
+            
+            
+        })
     }
 
     override func didReceiveMemoryWarning() {

@@ -65,7 +65,7 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
         preconditionFailure("This method must be overridden")
     }
     
-    func directionRoad(source: Annotationable, destination: Annotationable){
+    func directionRoad(source: Annotationable, destination: Annotationable, completionHandler:@escaping (RouteRequest, Error?) -> Void){
         preconditionFailure("This method must be overridden")
     }
     
