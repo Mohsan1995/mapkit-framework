@@ -35,11 +35,6 @@ class mapkit_frameworkUITests: XCTestCase {
         let app = XCUIApplication()
         app.otherElements["Cosne-Cours-sur-Loire"].tap()
         
-        let popoverdismissregionElement = app.otherElements["PopoverDismissRegion"]
-        popoverdismissregionElement.tap()
-        popoverdismissregionElement.tap()
-        
-        
     }
     
 }

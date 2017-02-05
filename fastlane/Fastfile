@@ -1,0 +1,26 @@
+lane :test do
+  cocoapods
+  scan(
+    clean: true,
+    code_coverage: true,
+    scheme: "mapkit-framework"
+  )
+  xcov(
+    scheme: "mapkit-framework"
+  )
+end
+
+lane :deploy do
+  if git_branch() == "master"
+    version = get_version_number()
+    set_github_release(
+      repository_name: "Mohsan1995/mapkit-framework",
+      name: version, # nom de la version sur GitHub
+      tag_name: "v#{version}",
+      api_token: ENV["GITHUB_TOKEN"],
+      description: changelog_from_git_commits(),
+      commitish: "master"
+    )
+    
+  end
+end

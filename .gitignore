@@ -146,3 +146,5 @@ fastlane/test_output
 *.xcscmblueprint
 
 # End of https://www.gitignore.io/api/windows,linux,osx,swift,xcode
+
+fastlane/xcov_report/
