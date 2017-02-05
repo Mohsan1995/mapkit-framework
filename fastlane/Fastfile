@@ -1,6 +1,7 @@
 lane :test do
   cocoapods
   scan(
+    clean: true,
     code_coverage: true,
     scheme: "mapkit-framework"
   )
