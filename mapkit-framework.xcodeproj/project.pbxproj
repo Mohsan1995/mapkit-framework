@@ -30,7 +30,19 @@
 		66A2F3D41E3F39AB009F284E /* ApiMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3D31E3F39AB009F284E /* ApiMapViewController.swift */; };
 		C2E536321E45F8C700090150 /* RouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E536311E45F8C700090150 /* RouteRequest.swift */; };
 		C2E536341E45F93D00090150 /* MKRoute+RouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E536331E45F93D00090150 /* MKRoute+RouteRequest.swift */; };
+		C2E5363C1E4602C200090150 /* mapkit_frameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E5363B1E4602C200090150 /* mapkit_frameworkUITests.swift */; };
+		C2E536451E467B6B00090150 /* annotation.json in Resources */ = {isa = PBXBuildFile; fileRef = C2E536441E467B6B00090150 /* annotation.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2E5363E1E4602C300090150 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66873DC91E3A43CB00B81FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66873DD01E3A43CB00B81FAB;
+			remoteInfo = "mapkit-framework";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		38C33FF713913AB9D37C94A8 /* Pods-mapkit-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapkit-framework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapkit-framework/Pods-mapkit-framework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +71,10 @@
 		C2E311651E44F87500B8C091 /* mapkit-framework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mapkit-framework-Bridging-Header.h"; sourceTree = "<group>"; };
 		C2E536311E45F8C700090150 /* RouteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteRequest.swift; sourceTree = "<group>"; };
 		C2E536331E45F93D00090150 /* MKRoute+RouteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKRoute+RouteRequest.swift"; sourceTree = "<group>"; };
+		C2E536391E4602C200090150 /* mapkit-frameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mapkit-frameworkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E5363B1E4602C200090150 /* mapkit_frameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapkit_frameworkUITests.swift; sourceTree = "<group>"; };
+		C2E5363D1E4602C300090150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E536441E467B6B00090150 /* annotation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = annotation.json; sourceTree = "<group>"; };
 		DF40E1742EB831B1319AD3F6 /* Pods-mapkit-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapkit-framework.release.xcconfig"; path = "Pods/Target Support Files/Pods-mapkit-framework/Pods-mapkit-framework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +84,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C24494A5CA17894B8619197 /* libPods-mapkit-framework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2E536361E4602C200090150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +112,7 @@
 			children = (
 				66873E131E3A53A400B81FAB /* Sources */,
 				66873E111E3A538C00B81FAB /* Sample */,
+				C2E5363A1E4602C200090150 /* mapkit-frameworkUITests */,
 				66873DD21E3A43CB00B81FAB /* Products */,
 				8B1420D23FA92A010D313FE6 /* Pods */,
 				EB4CCBCE9B4E0DA548EA2C6D /* Frameworks */,
@@ -99,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				66873DD11E3A43CB00B81FAB /* mapkit-framework.app */,
+				C2E536391E4602C200090150 /* mapkit-frameworkUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +131,7 @@
 		66873E111E3A538C00B81FAB /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				C2E536441E467B6B00090150 /* annotation.json */,
 				66873E141E3A53BE00B81FAB /* AppDelegate.swift */,
 				66873E151E3A53BE00B81FAB /* Assets.xcassets */,
 				66873E161E3A53BE00B81FAB /* Base.lproj */,
@@ -172,6 +198,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C2E5363A1E4602C200090150 /* mapkit-frameworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2E5363B1E4602C200090150 /* mapkit_frameworkUITests.swift */,
+				C2E5363D1E4602C300090150 /* Info.plist */,
+			);
+			path = "mapkit-frameworkUITests";
+			sourceTree = "<group>";
+		};
 		EB4CCBCE9B4E0DA548EA2C6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +238,24 @@
 			productReference = 66873DD11E3A43CB00B81FAB /* mapkit-framework.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C2E536381E4602C200090150 /* mapkit-frameworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2E536401E4602C300090150 /* Build configuration list for PBXNativeTarget "mapkit-frameworkUITests" */;
+			buildPhases = (
+				C2E536351E4602C200090150 /* Sources */,
+				C2E536361E4602C200090150 /* Frameworks */,
+				C2E536371E4602C200090150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2E5363F1E4602C300090150 /* PBXTargetDependency */,
+			);
+			name = "mapkit-frameworkUITests";
+			productName = "mapkit-frameworkUITests";
+			productReference = C2E536391E4602C200090150 /* mapkit-frameworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +270,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+					};
+					C2E536381E4602C200090150 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 66873DD01E3A43CB00B81FAB;
 					};
 				};
 			};
@@ -234,6 +292,7 @@
 			projectRoot = "";
 			targets = (
 				66873DD01E3A43CB00B81FAB /* mapkit-framework */,
+				C2E536381E4602C200090150 /* mapkit-frameworkUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,7 +306,15 @@
 				66873E211E3A53BE00B81FAB /* Main.storyboard in Resources */,
 				66873E241E3A53BE00B81FAB /* MainViewController.xib in Resources */,
 				66873E1F1E3A53BE00B81FAB /* Assets.xcassets in Resources */,
+				C2E536451E467B6B00090150 /* annotation.json in Resources */,
 				66873E201E3A53BE00B81FAB /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2E536371E4602C200090150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +393,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C2E536351E4602C200090150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E5363C1E4602C200090150 /* mapkit_frameworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2E5363F1E4602C300090150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66873DD01E3A43CB00B81FAB /* mapkit-framework */;
+			targetProxy = C2E5363E1E4602C300090150 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		66873E171E3A53BE00B81FAB /* LaunchScreen.storyboard */ = {
@@ -472,6 +555,30 @@
 			};
 			name = Release;
 		};
+		C2E536411E4602C300090150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "mapkit-frameworkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.firstedia.mapkit-frameworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "mapkit-framework";
+			};
+			name = Debug;
+		};
+		C2E536421E4602C300090150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "mapkit-frameworkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.firstedia.mapkit-frameworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "mapkit-framework";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -489,6 +596,15 @@
 			buildConfigurations = (
 				66873DE41E3A43CB00B81FAB /* Debug */,
 				66873DE51E3A43CB00B81FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2E536401E4602C300090150 /* Build configuration list for PBXNativeTarget "mapkit-frameworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2E536411E4602C300090150 /* Debug */,
+				C2E536421E4602C300090150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

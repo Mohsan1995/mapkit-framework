@@ -15,7 +15,6 @@ class MainViewController: UIViewController, MapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.mapView = IOSMapViewController(rootView: self.view)
         //self.mapView = GoogleMapViewController(rootView: self.view)
         mapView?.delegate = self
