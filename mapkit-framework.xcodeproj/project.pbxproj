@@ -28,7 +28,7 @@
 		66A2F3CF1E3F35F0009F284E /* IOSMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3CB1E3F35F0009F284E /* IOSMapViewController.swift */; };
 		66A2F3D01E3F35F0009F284E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3CC1E3F35F0009F284E /* MapViewController.swift */; };
 		66A2F3D41E3F39AB009F284E /* ApiMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2F3D31E3F39AB009F284E /* ApiMapViewController.swift */; };
-		C2E536321E45F8C700090150 /* RouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E536311E45F8C700090150 /* RouteRequest.swift */; };
+		C254194C1E4757A5009A7272 /* RouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254194A1E4757A5009A7272 /* RouteRequest.swift */; };
 		C2E536341E45F93D00090150 /* MKRoute+RouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E536331E45F93D00090150 /* MKRoute+RouteRequest.swift */; };
 		C2E5363C1E4602C200090150 /* mapkit_frameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E5363B1E4602C200090150 /* mapkit_frameworkUITests.swift */; };
 		C2E536451E467B6B00090150 /* annotation.json in Resources */ = {isa = PBXBuildFile; fileRef = C2E536441E467B6B00090150 /* annotation.json */; };
@@ -68,8 +68,8 @@
 		66A2F3CB1E3F35F0009F284E /* IOSMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IOSMapViewController.swift; path = Sources/Controllers/IOSMapViewController.swift; sourceTree = "<group>"; };
 		66A2F3CC1E3F35F0009F284E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Sources/Controllers/MapViewController.swift; sourceTree = "<group>"; };
 		66A2F3D31E3F39AB009F284E /* ApiMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiMapViewController.swift; path = Sources/Controllers/ApiMapViewController.swift; sourceTree = "<group>"; };
+		C254194A1E4757A5009A7272 /* RouteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteRequest.swift; path = Sources/RouteRequest.swift; sourceTree = "<group>"; };
 		C2E311651E44F87500B8C091 /* mapkit-framework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mapkit-framework-Bridging-Header.h"; sourceTree = "<group>"; };
-		C2E536311E45F8C700090150 /* RouteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteRequest.swift; sourceTree = "<group>"; };
 		C2E536331E45F93D00090150 /* MKRoute+RouteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKRoute+RouteRequest.swift"; sourceTree = "<group>"; };
 		C2E536391E4602C200090150 /* mapkit-frameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mapkit-frameworkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E5363B1E4602C200090150 /* mapkit_frameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapkit_frameworkUITests.swift; sourceTree = "<group>"; };
@@ -131,15 +131,15 @@
 		66873E111E3A538C00B81FAB /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				C2E536441E467B6B00090150 /* annotation.json */,
-				66873E141E3A53BE00B81FAB /* AppDelegate.swift */,
-				66873E151E3A53BE00B81FAB /* Assets.xcassets */,
 				66873E161E3A53BE00B81FAB /* Base.lproj */,
+				C2E536441E467B6B00090150 /* annotation.json */,
 				66873E1B1E3A53BE00B81FAB /* Info.plist */,
+				66873E141E3A53BE00B81FAB /* AppDelegate.swift */,
 				66873E1C1E3A53BE00B81FAB /* MainViewController.swift */,
 				66873E1D1E3A53BE00B81FAB /* MainViewController.xib */,
 				66873E291E3B8A4600B81FAB /* City.swift */,
 				C2E311651E44F87500B8C091 /* mapkit-framework-Bridging-Header.h */,
+				66873E151E3A53BE00B81FAB /* Assets.xcassets */,
 			);
 			name = Sample;
 			sourceTree = "<group>";
@@ -151,8 +151,8 @@
 				66F3D1FD1E3BC7E600F56A42 /* Delegates */,
 				661706501E3E2CEC0091C11B /* Extensions */,
 				66A2F3A21E3F3588009F284E /* Annotationable.swift */,
+				C254194A1E4757A5009A7272 /* RouteRequest.swift */,
 				66A2F3AD1E3F3588009F284E /* PointAnnotation.swift */,
-				C2E536311E45F8C700090150 /* RouteRequest.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -379,7 +379,7 @@
 				66873E1E1E3A53BE00B81FAB /* AppDelegate.swift in Sources */,
 				66A2F3C71E3F35E7009F284E /* IOSMapViewDelegate.swift in Sources */,
 				C2E536341E45F93D00090150 /* MKRoute+RouteRequest.swift in Sources */,
-				C2E536321E45F8C700090150 /* RouteRequest.swift in Sources */,
+				C254194C1E4757A5009A7272 /* RouteRequest.swift in Sources */,
 				66873E2A1E3B8A4600B81FAB /* City.swift in Sources */,
 				66A2F3BA1E3F3588009F284E /* PointAnnotation.swift in Sources */,
 				66A2F3AF1E3F3588009F284E /* Annotationable.swift in Sources */,
