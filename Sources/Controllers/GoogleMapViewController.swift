@@ -3,16 +3,18 @@ import GoogleMaps
 
 class GoogleMapViewController: ApiMapViewController<GMSMarker, GMSMapView, GoogleMapViewDelegate> {
     
-    init(rootView: UIView) {
+    init(rootView: UIView, frame: CGRect) {
+        let mapView = GMSMapView(frame: frame)
+        mapView.mapType = GoogleMaps.kGMSTypeNormal
         super.init(
             rootView: rootView,
-            mapView: GMSMapView.init(frame: rootView.bounds)
+            mapView: mapView
         )
     }
     
     override func generatePointAnnotationTyped(annotation: Annotationable) -> GMSMarker {
         let pointAnnoation = GMSMarker(position: annotation.getCoord())
-        pointAnnoation.title = annotation.getTitle()
+        pointAnnoation.title = annotation.getTitle() + " " + annotation.getSubTitle()
 
         return pointAnnoation
     }
@@ -28,5 +30,9 @@ class GoogleMapViewController: ApiMapViewController<GMSMarker, GMSMapView, Googl
     
     override func applyApiDelegate() {
         mapView.delegate = apiDelegate!
+    }
+    
+    override func directionRoad(source: Annotationable, destination: Annotationable, completionHandler:@escaping (RouteRequest, Error?) -> Void) {
+        
     }
 }

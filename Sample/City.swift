@@ -3,14 +3,16 @@ import CoreLocation
 
 class City: Annotationable {
     var name: String
+    var zip: String
     var country: String
     var lat: Double
     var lon: Double
     
     var coordinate: CLLocationCoordinate2D?
     
-    init(name: String, country: String, lat: Double, lon: Double) {
+    init(name: String, zip: String, country: String, lat: Double, lon: Double) {
         self.name = name
+        self.zip = zip
         self.country = country
         self.lat = lat
         self.lon = lon
@@ -26,6 +28,10 @@ class City: Annotationable {
     
     override func getTitle() -> String {
         return self.name;
+    }
+    
+    override func getSubTitle() -> String {
+        return self.zip.components(separatedBy: " ")[0];
     }
     
     override var hashValue: Int {

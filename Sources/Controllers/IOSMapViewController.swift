@@ -3,18 +3,17 @@ import MapKit
 
 class IOSMapViewController: ApiMapViewController<MKPointAnnotation, MKMapView, IOSMapViewDelegate> {
     
-    init(rootView: UIView) {
-
-        
+    init(rootView: UIView, frame: CGRect) {
         super.init(
             rootView: rootView,
-            mapView: MKMapView(frame: rootView.frame)
+            mapView: MKMapView(frame: frame)
         )
     }
     
     override func generatePointAnnotationTyped(annotation: Annotationable) -> MKPointAnnotation {
         let pointAnnoation = MKPointAnnotation()
         pointAnnoation.title = annotation.getTitle()
+        pointAnnoation.subtitle = annotation.getSubTitle()
         pointAnnoation.coordinate = annotation.getCoord()
         
         return pointAnnoation

@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  mapkit-framework
-//
-//  Created by Quentin on 26/01/2017.
-//  Copyright © 2017 ESGI. All rights reserved.
-//
-
 import UIKit
 import GoogleMaps
 
