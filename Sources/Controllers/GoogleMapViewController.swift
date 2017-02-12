@@ -4,11 +4,9 @@ import GoogleMaps
 class GoogleMapViewController: ApiMapViewController<GMSMarker, GMSMapView, GoogleMapViewDelegate> {
     
     init(rootView: UIView, frame: CGRect) {
-        let mapView = GMSMapView(frame: frame)
-        mapView.mapType = GoogleMaps.kGMSTypeNormal
         super.init(
             rootView: rootView,
-            mapView: mapView
+            mapView: GMSMapView(frame: frame)
         )
     }
     
@@ -34,5 +32,16 @@ class GoogleMapViewController: ApiMapViewController<GMSMarker, GMSMapView, Googl
     
     override func directionRoad(source: Annotationable, destination: Annotationable, completionHandler:@escaping (RouteRequest, Error?) -> Void) {
         
+    }
+    
+    override func setMapType(type: MapType) {
+        switch type {
+        case .Normal:
+            mapView.mapType = GoogleMaps.kGMSTypeNormal
+        case .Satellite:
+            mapView.mapType = GoogleMaps.kGMSTypeSatellite
+        case .Hybrid:
+            mapView.mapType = GoogleMaps.kGMSTypeHybrid
+        }
     }
 }

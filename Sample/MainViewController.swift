@@ -9,10 +9,9 @@ class MainViewController: UIViewController, MapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //GMSServices.provideAPIKey("")
-        
-        self.mapView = IOSMapViewController(rootView: self.view, frame: UIScreen.main.bounds)
-        //self.mapView = GoogleMapViewController(rootView: self.view, frame: UIScreen.main.bounds)
+        //self.mapView = IOSMapViewController(rootView: self.view, frame: UIScreen.main.bounds)
+        self.mapView = GoogleMapViewController(rootView: self.view, frame: UIScreen.main.bounds)
+        self.mapView?.setMapType(type: .Satellite)
         mapView?.delegate = self
         
         do {

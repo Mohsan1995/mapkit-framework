@@ -70,8 +70,17 @@ class IOSMapViewController: ApiMapViewController<MKPointAnnotation, MKMapView, I
             
             
             completionHandler(route, nil)
-            
-            
+        }
+    }
+    
+    override func setMapType(type: MapType) {
+        switch type {
+        case .Normal:
+            mapView.mapType = .standard
+        case .Satellite:
+            mapView.mapType = .satellite
+        case .Hybrid:
+            mapView.mapType = .hybrid
         }
     }
 }

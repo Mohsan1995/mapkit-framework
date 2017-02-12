@@ -69,5 +69,7 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
         preconditionFailure("This method must be overridden")
     }
     
-    
+    func setMapType(type: MapType) {
+        preconditionFailure("This method must be overridden")
+    }
 }
