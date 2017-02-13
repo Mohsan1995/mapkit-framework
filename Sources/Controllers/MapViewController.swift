@@ -3,13 +3,13 @@ import CoreLocation
 
 protocol MapViewController {
     var delegate: MapViewDelegate? {get set}
-    func remove(annotation: Annotationable)
+    func remove(annotation: Annotation)
     
-    func add(annotation: Annotationable)
+    func add(annotation: Annotation)
     
-    func getAnnotationByCoor(coor: CLLocationCoordinate2D) -> Annotationable?
+    func getAnnotationByCoor(coor: CLLocationCoordinate2D) -> Annotation?
     
-    func directionRoad(source: Annotationable, destination: Annotationable, completionHandler:@escaping (RouteRequest, Error?) -> Void)
+    func directionRoad(source: Annotation, destination: Annotation, completionHandler:@escaping (RouteRequest, Error?) -> Void)
     
     func setMapType(type: MapType)
 }

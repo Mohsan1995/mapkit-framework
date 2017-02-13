@@ -7,7 +7,7 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
     var rootView: UIView!
     var mapView: V!
     
-    var annotations: [Annotationable:P] = [:]
+    var annotations: [Annotation:P] = [:]
     
     var apiDelegate: D?
     var delegate: MapViewDelegate? = nil {
@@ -26,13 +26,13 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
         self.rootView.addSubview(self.mapView)
     }
     
-    func add(annotation: Annotationable) {
+    func add(annotation: Annotation) {
         let pointAnnotation = generatePointAnnotationTyped(annotation: annotation)
         annotations[annotation] = pointAnnotation
         applyPointAnnotationToMapView(pointAnnotation: pointAnnotation)
     }
     
-    func remove(annotation: Annotationable) {
+    func remove(annotation: Annotation) {
         let pointAnnotation = annotations[annotation]
         if (pointAnnotation != nil) {
             removePointAnnotationToMapView(pointAnnotation: pointAnnotation!)
@@ -40,7 +40,7 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
         }
     }
     
-    func getAnnotationByCoor(coor: CLLocationCoordinate2D) -> Annotationable? {
+    func getAnnotationByCoor(coor: CLLocationCoordinate2D) -> Annotation? {
         for (annotation, _) in annotations {
             if (annotation.getCoord().latitude == coor.latitude && annotation.getCoord().longitude == coor.longitude) {
                 return annotation
@@ -49,7 +49,7 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
         return nil
     }
     
-    func generatePointAnnotationTyped(annotation: Annotationable) -> P {
+    func generatePointAnnotationTyped(annotation: Annotation) -> P {
         preconditionFailure("This method must be overridden")
     }
     
@@ -65,7 +65,7 @@ class ApiMapViewController<P: PointAnnotation, V: UIView, D: ApiMapViewDelegate>
         preconditionFailure("This method must be overridden")
     }
     
-    func directionRoad(source: Annotationable, destination: Annotationable, completionHandler:@escaping (RouteRequest, Error?) -> Void){
+    func directionRoad(source: Annotation, destination: Annotation, completionHandler:@escaping (RouteRequest, Error?) -> Void){
         preconditionFailure("This method must be overridden")
     }
     

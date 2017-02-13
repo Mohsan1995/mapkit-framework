@@ -11,10 +11,13 @@ class GoogleMapViewController: ApiMapViewController<GMSMarker, GMSMapView, Googl
         )
     }
     
-    override func generatePointAnnotationTyped(annotation: Annotationable) -> GMSMarker {
+    override func generatePointAnnotationTyped(annotation: Annotation) -> GMSMarker {
         let pointAnnoation = GMSMarker(position: annotation.getCoord())
         pointAnnoation.title = annotation.getTitle()
         pointAnnoation.snippet = annotation.getSubTitle()
+        if annotation is CustomAnnotation {
+            pointAnnoation.icon = (annotation as! CustomAnnotation).getIcon()
+        }
 
         return pointAnnoation
     }
@@ -31,7 +34,7 @@ class GoogleMapViewController: ApiMapViewController<GMSMarker, GMSMapView, Googl
         mapView.delegate = apiDelegate!
     }
     
-    override func directionRoad(source: Annotationable, destination: Annotationable, completionHandler:@escaping (RouteRequest, Error?) -> Void) {
+    override func directionRoad(source: Annotation, destination: Annotation, completionHandler:@escaping (RouteRequest, Error?) -> Void) {
         let url: String = String.init(format: "%@?origin=%f,%f&destination=%f,%f&sensor=true&key=%@",
                     "https://maps.googleapis.com/maps/api/directions/json",
                     source.getCoord().latitude,

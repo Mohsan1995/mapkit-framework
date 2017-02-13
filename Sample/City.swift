@@ -1,7 +1,7 @@
 import UIKit
 import CoreLocation
 
-class City: Annotationable {
+class City: CustomAnnotation {
     var name: String
     var zip: String
     var country: String
@@ -9,6 +9,7 @@ class City: Annotationable {
     var lon: Double
     
     var coordinate: CLLocationCoordinate2D?
+    var icon: UIImage?
     
     init(name: String, zip: String, country: String, lat: Double, lon: Double) {
         self.name = name
@@ -40,5 +41,12 @@ class City: Annotationable {
     
     static func == (lhs: City, rhs: City) -> Bool {
         return lhs === rhs
+    }
+    
+    override func getIcon() -> UIImage {
+        if (icon == nil) {
+            icon = UIImage(named: "pin.png")
+        }
+        return icon!
     }
 }

@@ -10,7 +10,7 @@ class IOSMapViewController: ApiMapViewController<MKPointAnnotation, MKMapView, I
         )
     }
     
-    override func generatePointAnnotationTyped(annotation: Annotationable) -> MKPointAnnotation {
+    override func generatePointAnnotationTyped(annotation: Annotation) -> MKPointAnnotation {
         let pointAnnoation = MKPointAnnotation()
         pointAnnoation.title = annotation.getTitle()
         pointAnnoation.subtitle = annotation.getSubTitle()
@@ -32,7 +32,7 @@ class IOSMapViewController: ApiMapViewController<MKPointAnnotation, MKMapView, I
         mapView.delegate = apiDelegate!
     }
     
-    override func directionRoad(source: Annotationable, destination: Annotationable, completionHandler:@escaping (RouteRequest, Error?) -> Void){
+    override func directionRoad(source: Annotation, destination: Annotation, completionHandler:@escaping (RouteRequest, Error?) -> Void){
         let directionRequest = MKDirectionsRequest();
         
         

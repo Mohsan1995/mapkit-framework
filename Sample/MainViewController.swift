@@ -54,12 +54,12 @@ class MainViewController: UIViewController, MapViewDelegate {
     }
     
     
-    func onSelectAnnotation(annotation: Annotationable) {
+    func onSelectAnnotation(annotation: Annotation) {
         print("onSelectAnnotation")
         print(annotation.getTitle())
     }
     
-    func onUnselectAnnotation(annotation: Annotationable) {
+    func onUnselectAnnotation(annotation: Annotation) {
         print("onUnselectAnnotation")
         print(annotation.getTitle())
     }
