@@ -6,10 +6,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    let googleMapsApiKey = ""
+    static var googleMapsApiKey: String = ""
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        GMSServices.provideAPIKey(googleMapsApiKey)
+        GMSServices.provideAPIKey(AppDelegate.googleMapsApiKey)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let navigationController = MainViewController()

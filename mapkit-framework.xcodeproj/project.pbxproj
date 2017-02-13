@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C24494A5CA17894B8619197 /* libPods-mapkit-framework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54079F5666585B183C02A918 /* libPods-mapkit-framework.a */; };
 		667048A51E50B50100363415 /* MapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667048A41E50B50100363415 /* MapType.swift */; };
 		66873E1E1E3A53BE00B81FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66873E141E3A53BE00B81FAB /* AppDelegate.swift */; };
 		66873E1F1E3A53BE00B81FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66873E151E3A53BE00B81FAB /* Assets.xcassets */; };
@@ -32,6 +31,7 @@
 		C2CB027D1E476799001D1764 /* MKRoute+RouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB027C1E476799001D1764 /* MKRoute+RouteRequest.swift */; };
 		C2E5363C1E4602C200090150 /* mapkit_frameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E5363B1E4602C200090150 /* mapkit_frameworkUITests.swift */; };
 		C2E536451E467B6B00090150 /* annotation.json in Resources */ = {isa = PBXBuildFile; fileRef = C2E536441E467B6B00090150 /* annotation.json */; };
+		F8DDF7901C4C7AE6DA3E06FF /* Pods_mapkit_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F77A66AA68B0FCF51D8E7A /* Pods_mapkit_framework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28F77A66AA68B0FCF51D8E7A /* Pods_mapkit_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mapkit_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C33FF713913AB9D37C94A8 /* Pods-mapkit-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapkit-framework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapkit-framework/Pods-mapkit-framework.debug.xcconfig"; sourceTree = "<group>"; };
-		54079F5666585B183C02A918 /* libPods-mapkit-framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapkit-framework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		667048A41E50B50100363415 /* MapType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapType.swift; path = Sources/MapType.swift; sourceTree = "<group>"; };
 		66873DD11E3A43CB00B81FAB /* mapkit-framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapkit-framework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66873E141E3A53BE00B81FAB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sample/AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C24494A5CA17894B8619197 /* libPods-mapkit-framework.a in Frameworks */,
+				F8DDF7901C4C7AE6DA3E06FF /* Pods_mapkit_framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +212,7 @@
 		EB4CCBCE9B4E0DA548EA2C6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				54079F5666585B183C02A918 /* libPods-mapkit-framework.a */,
+				28F77A66AA68B0FCF51D8E7A /* Pods_mapkit_framework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
