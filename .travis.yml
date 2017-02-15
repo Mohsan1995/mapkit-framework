@@ -10,6 +10,7 @@ branches:
 notifications:
   email: false
 before_install:
+  - pod repo update
   - gem install bundler
   - bundle install
 script:
