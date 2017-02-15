@@ -6,7 +6,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    static var googleMapsApiKey: String = ""
+    static var googleMapsApiKey: String = "AIzaSyChKoUjMpgFNsOkRGjGu0sx76VAvb9ddvs"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey(AppDelegate.googleMapsApiKey)
